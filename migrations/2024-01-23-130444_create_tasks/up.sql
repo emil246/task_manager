@@ -1,0 +1,8 @@
+-- Your SQL goes here
+CREATE TABLE tasks (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  name TEXT NOT NULL,
+  description TEXT NOT NULL,
+  completed BOOLEAN DEFAULT FALSE NOT NULL,
+  expire DATE NOT NULL
+);

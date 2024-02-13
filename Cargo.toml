@@ -1,0 +1,11 @@
+[package]
+name = "task_manager"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = { version = "0.4.32", features = ["serde"] }
+clap = { version = "4.4.18", features = ["derive"] }
+comfy-table = "7.1.0"
+diesel = { version = "2.1.4", features = ["sqlite", "chrono", "returning_clauses_for_sqlite_3_35"] }
+diesel_migrations = { version = "2.1.0", features = ["sqlite"] }
